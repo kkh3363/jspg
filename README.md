@@ -1,2 +1,4 @@
-# jspg
-Internet Programming(JavaScript)
+# Internet Programming
+- JavaScript
+- Node.js
+- jQuery
