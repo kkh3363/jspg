@@ -1,0 +1,18 @@
+
+for(let i=1; i <= 10 ; i++){
+    str = '';
+    for (let j=1; j <= i; j++)
+        str +='*';
+    console.log(str);
+}
+
+let col = 10;
+for (let i=1; i<= col ; i++){
+    str = '';
+    // 9  i=1
+    for ( let j= 1; j <= col-i ; j++)
+        str +=' ';
+    for (let j=col-i; j <  col; j++)
+        str +='*';
+    console.log(str);
+}
