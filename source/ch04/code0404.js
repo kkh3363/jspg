@@ -1,11 +1,8 @@
-let array =[10, 20 ,"아침밥", '점심밥', true, false];
-let i = 0;
+//let dan  =3;
 
-while ( i < array.length){
-    console.log(array[i]);
-    i++;   
+for( let dan = 2; dan < 10; dan++){
+    for(let i=1; i < 10 ; i++){
+        console.log(`${dan} x ${i} = ${dan*i}`);
+        
+    }
 }
-
-// 증감 값이 일정할 때는 for 문을 작성한다.
-for ( let j=0; j < array.length ; j++ )
-    console.log(array[j]);
