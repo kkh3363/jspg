@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 예제..</title>
+</head>
+<body>
+    <h1 id="text-box">10초 후에 이 문구가 바뀝니다.</h1>
+
+    <script>
+        const textBox = document.getElementById('text-box');
+        
+        // setTimeout(function(){
+        //     textBox.textContent = "내용이 변경됨...";
+        // }, 4000);
+        setInterval(function(){
+            let time = new Date();
+            textBox.textContent =`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`;
+        }  , 1000);
+    </script>
+
+</body>
+</html>
