@@ -1,7 +1,7 @@
 
-for(let i=1; i <= 10 ; i++){
+for(let i=0; i < 10 ; i++){
     str = '';
-    for (let j=1; j <= i; j++)
+    for (let j=0; j <= i; j++)
         str +='*';
     console.log(str);
 }
