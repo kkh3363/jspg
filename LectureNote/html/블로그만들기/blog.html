@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 블로그</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>나의 블로그</h1>
+    <p>나의 이야기, 나의 생각들</p>
+  </header>
+
+  <main>
+    <section class="post">
+      <h2>블로그 첫 번째 글</h2>
+      <p class="date">2025-08-20</p>
+      <p class="content">여기는 내가 처음 쓴 블로그 글이에요. 간단한 HTML, CSS, JavaScript를 사용해서 만든 블로그입니다!</p>
+
+      <h3>댓글</h3>
+      <ul id="comment-list">
+        <!-- 댓글이 여기에 추가됩니다. -->
+      </ul>
+
+      <div class="comment-form">
+        <input type="text" id="comment-input" placeholder="댓글을 남겨주세요..." />
+        <button onclick="addComment()">댓글 추가</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 나의 블로그</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
