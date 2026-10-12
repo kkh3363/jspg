@@ -9,4 +9,7 @@
 1. vscode ( https://code.visualstudio.com/ )
 2. node.js (https://nodejs.org/ko/download)
 
-3. Mozilla Development Document(https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide)
+# 자바스크립트 참고 사이트
+1. Mozilla Development Document(https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide)
+2. W3cSchools (https://www.w3schools.com/js/)
+3. 모던 JavaScript 튜토리얼(https://ko.javascript.info/)
