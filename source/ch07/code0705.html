@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function alertMsg(msg){ 
+            alert(`좋은 ${msg}입니다`);
+        }
+    </script>
+</head>
+<body>
+    <h1>인라인 이벤트 처리</h1>
+    <ul>
+        <li><a href="" onclick="alert('좋은 아침입니다')">아침인사</a></li>
+        <li><a href="" onclick="alertMsg('점심')">점심인사</a></li>
+        <li><a href="" onclick="alertMsg('저녁')">저녁인사</a></li>
+        <li><button id="btnNight">밤인사</button></li>
+        <li><button id="btn2">AddEventListner</button></li>
+    </ul>
+    <script>
+        btnNight = document.getElementById("btnNight");
+        btnNight.onclick = function(){
+            alert('좋은 밤입니다');
+        }
+        const btn2 = document.getElementById("btn2");
+        //btn2.addEventListener('click', function(){alert('aaaa');});
+        btn2.addEventListener('dblclick', function(){alert('duble click');});
+    </script>
+</body>
+</html>
