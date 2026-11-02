@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container { width : 700px; margin: 0 auto; text-align:center;}
+        #contents { border: 1px solid #555; width: 500px; height: 200px; text-align: justify;}
+        .input_box { width: 500px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="contents"></div>
+        <div class="input_box">
+            <input type="text" name="txtContent" id="txtContent" size="40">
+            <button id="insertBtn">추가하기....</button>
+            <button onclick="clearContents();">리셋....</button>
+        </div>
+    </div>
+    <script>
+        function clearContents(){
+            document.querySelector('#contents').innerHTML= '';
+            document.querySelector('#txtContent').value ='';
+        }
+
+        let insertBtn = document.querySelector('#insertBtn');
+        insertBtn.onclick= addContent;
+        
+        function addContent(){
+            let txt = document.querySelector('#txtContent');
+            let contents = document.querySelector('#contents');
+
+            //contents.innerText += txt.value;
+            contents.innerHTML += `${txt.value}<br>`;
+            txt.value ='';
+            console.log(txt.value);
+        };
+    </script>
+</body>
+</html>
