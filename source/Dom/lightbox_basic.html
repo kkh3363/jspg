@@ -23,20 +23,7 @@
         </div>
     </div>
     <script>
-        let pics = document.querySelectorAll('.pic');
-        let lightbox =document.querySelector('#lightbox');
-        let lightboxImage =document.querySelector('#lightboxImage');
-        for( let i=0;i< pics.length; i++){
-                pics[i].addEventListener('click', showLightBox);
-            }
-        function showLightBox(){
-            let bigLocation = this.dataset.src;
-            lightboxImage.src =bigLocation;
-            lightbox.style.display = 'block';
-        }
-        lightbox.onclick = ()=>{
-            lightbox.style.display="none";
-        };
+        
     </script>
 </body>
 </html>
