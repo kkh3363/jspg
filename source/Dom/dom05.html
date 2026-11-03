@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web Programming</h1>
+    <ul>
+        <li>HTML</li>
+        <li>css</li>
+        <li>java script</li>
+    </ul>
+    <input type="text" name="txtNew" id="txtNew">
+    <button id="btnInsert">추가하기</button>
+    <button id="btnDeleteH1">제목삭제</button>
+    <script>
+        let btnInsert = document.querySelector("#btnInsert");
+        btnInsert.addEventListener('click',()=>{
+            let txtNew = document.querySelector("#txtNew");
+            let newItem = document.createElement("li");
+            let textNode = document.createTextNode(txtNew.value);
+            //console.log(txtNew.value);
+            newItem.appendChild(textNode);
+            document.querySelector("ul").appendChild(newItem);
+        });
+        document.querySelector("#btnDeleteH1").addEventListener('click', ()=>{
+            document.querySelector('ul').remove();
+        });
+    </script>
+</body>
+</html>

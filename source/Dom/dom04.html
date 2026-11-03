@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body{display: flex; justify-content: center; align-items: center; height: 100vh;}
+        img { padding: 20px; height: 250px;border: 1px solid #eee; box-shadow: 2px 2px 5px #ccc;}
+        .boxcls{ padding : 20px; height : 250px;}
+        #box { width : 200px; height : 100px ; background-color: red;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/kitty-1.png"  id="cat">
+    </div>
+    <div class="boxcls">
+        <div id="box"></div>
+    </div>
+    <script>
+        let cat = document.querySelector("#cat");
+        cat.addEventListener("mouseover", ()=>{
+            cat.src="images/kitty-2.png"
+        });
+        cat.addEventListener("mouseout", ()=>{ cat.src="images/kitty-1.png"});
+
+        let box = document.querySelector("#box");
+        box.addEventListener('mouseover', ()=>{
+            box.style.backgroundColor = "blue";
+        });
+         box.addEventListener('mouseout', ()=>{
+            box.style.backgroundColor = "red";
+        });
+    </script>
+</body>
+</html>
