@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <img src="images/kitty-1.png" id="cat">
+    </div>
+    <script>
+        let catFlag= true;
+        let cat = document.querySelector("#cat");
+        //cat.onclick= ( )=> alert("클릭 되었습니다.");
+        cat.onclick = changePic;
+
+        function changePic(){
+            if (catFlag == true)
+                cat.src = "images/kitty-2.png";
+            else
+                cat.src = "images/kitty-1.png";
+            catFlag = !catFlag;
+        }
+    </script>
+</body>
+</html>
