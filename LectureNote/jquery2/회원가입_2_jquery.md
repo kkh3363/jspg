@@ -1,7 +1,7 @@
 ## JQuery 사용
 
-<img width="682" height="898" alt="image" src="https://github.com/user-attachments/assets/fa4dcaed-2027-490c-aa68-9e21bde81d4f" />
+<img width="712" height="764" alt="image" src="https://github.com/user-attachments/assets/cbc15cca-ef6a-4849-a569-a049038f6728" />
 
--------------------
 
-<img width="883" height="993" alt="image" src="https://github.com/user-attachments/assets/00c5c7b1-0730-42da-a959-c70a5fd7c6d5" />
+<img width="954" height="691" alt="image" src="https://github.com/user-attachments/assets/bc9233fd-1764-4f7a-be2a-b0501fd4017e" />
+
